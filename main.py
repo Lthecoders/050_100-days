@@ -19,7 +19,7 @@ def idea_file():
   )
 
   f.write(f"{new_idea}\n")
-  print(green,'\n\nyour idea is recordered in my.idea file',normal)
+  print(green, '\n\nyour idea is recordered in my.idea file', normal)
   print('\n\nsaving...')
   time.sleep(2)
   os.system('clear')
@@ -30,8 +30,9 @@ def idea_file():
 def randome_file_idea():
   f = open('my.idea', 'r')
   random_idea = f.read()
-  sentence = random_idea.split('\n')#by doing split we have converted string into list
-  #in split we have mention \n that means make list based on \n 
+  sentence = random_idea.split(
+      '\n')  #by doing split we have converted string into list
+  #in split we have mention \n that means make list based on \n
   #it means where ever you found a back slash n you have to take it and drop it into [] brackets
   # where every there are \n inculding with the other sring take all and convert it into list
   # you can prefere the image named undertant rmove and split for bettern understanding
@@ -53,6 +54,8 @@ def randome_file_idea():
 
 
 def menu():
+  print('\nENTER 1 FOR ADDING IDEA or ENTER 2 for random idea')
+  print('---------------------------------------------------\n\n')
   user = input(
       'what you want to do\n\n1. store idea\n\n2. see an random idea?\n\nPress ENTER for exit\n---> '
   )
